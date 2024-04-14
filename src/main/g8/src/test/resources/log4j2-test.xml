@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Configuration xmlns="http://logging.apache.org/log4j/2.0/config">
+    <Appenders>
+        <Console name="stdout" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %msg [%c] (%t)%n" />
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="ERROR">
+            <AppenderRef ref="stdout" />
+        </Root>
+    </Loggers>
+</Configuration>
